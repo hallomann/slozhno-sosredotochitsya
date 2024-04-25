@@ -6,13 +6,17 @@
   color: var(--text-color);
   padding-block: 10px;
   padding-inline: 10px;
+  padding-inline-start: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-attachment: fixed;
-  background: var(--background-image) no-repeat top center / cover fixed;
+  background-image: var(--background-image);
 }
 
 .header {
   display: grid;
-  grid-template-rows: auto max-content auto;
+  grid-template-rows: 1fr max-content 1fr;
   align-items: center;
   position: relative;
   margin-block-end: 50px;
@@ -46,7 +50,7 @@
   right: 0;
 }
 
-.decorative-rec-icon {
+.header-rec {
   position: absolute;
   display: flex;
   align-items: center;
@@ -58,7 +62,7 @@
   line-height: 23px;
 }
 
-.decorative-rec-icon::after {
+.header-rec::after {
   content: "";
   display: block;
   background-color: var(--main-color);
@@ -90,16 +94,16 @@
 }
 
 .header__theme-menu-button:hover {
-  border-bottom-color: var(--h2-color);
+  border-bottom-color: var(--hover-color);
 }
 
 .header__theme-menu-button:focus {
-  border-bottom: 0.5px solid var(--h2-color);
+  border-bottom: 0.5px solid var(--hover-color);
   outline: none;
 }
 
 .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--h2-color);
+  border-bottom: 1px solid var(--hover-color);
   outline: none;
 }
 
@@ -110,7 +114,7 @@
 }
 
 .header__title {
-  font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 700;
   line-height: 82.5%;
   color: var(--title-color);
@@ -135,18 +139,15 @@
   font-weight: 700;
   line-height: 23.4px;
   margin-block-end: 20px;
-  font-size: 18px;
 }
 
 .h3__title {
-  font-size: 18px;
   color: var(--accent-color);
   background-color: var(--main-color);
   margin-block-end: 10px;
 }
 
 .text {
-  font-size: 18px;
   font-weight: 400;
   line-height: 23.4px;
   color: var(--text-color);
@@ -214,32 +215,30 @@
 .footer__title {
   justify-self: center;
   align-self: center;
-  font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+  font-size: 157px;
   font-weight: 700;
   line-height: 82.5%;
   color: var(--title-color);
   text-shadow: 2px 2px 0px var(--shadow-color);
 }
 
+/* медиазапросы */
+
 @media (min-width: 768px) {
   .page {
     padding-block: 20px;
     padding-inline: 0;
   }
-}
 
-@media (min-width: 768px) {
   .header {
     padding-inline-end: 20px;
   }
-}
 
-@media (min-width: 768px) {
   .decorated-zone {
     min-height: 96vh;
   }
 
-  .decorative-rec-icon {
+  .header-rec {
     margin: 2px 30px 0 0;
   }
 
@@ -250,67 +249,19 @@
   .decorated-zone::before {
     right: 20px;
   }
-}
 
-@media (min-width: 1024px) {
-  .decorated-zone {
-    min-height: 94.7vh;
-  }
-}
-
-@media (max-width: 768px) {
-  .decorative-rec-icon {
-    margin: 2px 10px 0 0;
-  }
-}
-
-@media (min-width: 1024px) {
-  .header__theme-menu {
-    justify-self: center;
-    align-self: start;
-    margin-block-start: 0;
-    margin-inline-start: 20px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .header__theme-menu-list {
-    align-items: center;
-    flex-direction: row;
-    gap: 13px;
-  }
-}
-
-@media (min-width: 768px) {
   .header__title {
     margin-block-start: 10px;
     padding-inline-start: 0;
     font-size: 120px;
   }
-}
 
-@media (min-width: 1024px) {
-  .header__title {
-    font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
-    margin-block-start: 80px;
-  }
-}
-
-@media (min-width: 768px) {
   .header__text {
     inline-size: 364px;
     margin: 0;
     padding: 0;
   }
-}
 
-@media (min-width: 1024px) {
-  .header__text {
-    inline-size: 491px;
-  }
-}
-
-@media (min-width: 768px) {
   .section__why {
     display: grid;
     grid-template-columns: 235px 1fr;
@@ -318,15 +269,7 @@
     margin-block-start: 80px;
     padding-inline: 20px;
   }
-}
 
-@media (min-width: 1024px) {
-  .section__why {
-    grid-template-columns: 314px 1fr;
-  }
-}
-
-@media (min-width: 768px) {
   .section__what {
     margin-block-start: 60px;
     padding-inline: 20px;
@@ -344,25 +287,7 @@
   .section__what__list-text {
     max-inline-size: 728px;
   }
-}
 
-@media (min-width: 1024px) {
-  .section__what_list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-  }
-
-  .section__what__title {
-    max-inline-size: 315px;
-  }
-
-  .section__what__list-text {
-    max-inline-size: 315px;
-  }
-}
-
-@media (min-width: 768px) {
   .section__how {
     display: grid;
     grid-template-columns: 235px 1fr;
@@ -374,18 +299,7 @@
   .section__how_list-text {
     min-inline-size: 472px;
   }
-}
 
-@media (min-width: 1024px) {
-  .section__how {
-    display: grid;
-    grid-template-columns: 315px 1fr;
-    margin-block-start: 60px;
-    gap: 20px;
-  }
-}
-
-@media (min-width: 768px) {
   .section__gallery {
     margin-block-start: 62px;
     padding-inline: 20px;
@@ -429,21 +343,75 @@
     height: 100%;
     object-fit: cover;
   }
-}
 
-@media (min-width: 768px) {
   .footer {
     margin-block-start: 80px;
     padding-inline: 20px;
   }
 
   .footer__title {
-    font-size: 120px;
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 }
 
 @media (min-width: 1024px) {
+  .decorated-zone {
+    min-height: 94.7vh;
+  }
+
+  .header__theme-menu {
+    justify-self: center;
+    align-self: start;
+    margin-block-start: 0;
+  }
+
+  .header__theme-menu-list {
+    align-items: center;
+    flex-direction: row;
+    gap: 13px;
+  }
+
+  .header__title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    margin-block-start: 80px;
+  }
+
+  .header__text {
+    inline-size: 491px;
+  }
+
+  .section__why {
+    grid-template-columns: 314px 1fr;
+  }
+
+  .section__what_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  .section__what__title {
+    max-inline-size: 315px;
+  }
+
+  .section__what__list-text {
+    max-inline-size: 315px;
+  }
+
+  .section__how {
+    display: grid;
+    grid-template-columns: 315px 1fr;
+    margin-block-start: 60px;
+    gap: 20px;
+  }
+
   .footer__title {
-    font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) 
+  }
+}
+
+@media (max-width: 768px) {
+  .header-rec {
+    margin: 2px 10px 0 0;
   }
 }

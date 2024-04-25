@@ -15,17 +15,5 @@
   --shadow-color: #ff0070;
   --dec-color: #ff0070;
   --h2-color: #ff0070;
-}
-
-:root.theme-dark {
-  --background-image: url(../images/cover-image-dark.png);
-  --main-font: "IBM Plex Mono";
-  --text-color: #f1b2ce;
-  --main-color: #ff0070;
-  --accent-color: #000028;
-  --title-color: #db00ff;
-  --menu-color: #ff0070;
-  --shadow-color: #ff0070;
-  --dec-color: #ff0070;
-  --h2-color: #ff0070;
+  --hover-color: rgba(255, 0, 112, 0.4);
 }

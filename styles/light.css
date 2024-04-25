@@ -4,6 +4,12 @@
   переключая тему
 */
 
+/*
+  Специально для светлой темы при наличии класса.
+  Здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
+
 .page.theme_light {
   --background-image: url(../images/cover-image-light.png);
   --main-font: "IBM Plex Mono";
@@ -15,6 +21,7 @@
   --shadow-color: #ff0070;
   --dec-color: #353430;
   --h2-color: #353430;
+  --hover-color: rgb(50, 49, 45);
 }
 
 @media (prefers-color-scheme: light) {
@@ -29,9 +36,10 @@
     --shadow-color: #ff0070;
     --dec-color: #353430;
     --h2-color: #353430;
+    --hover-color: rgba(50, 49, 45, 0.4);
   }
 }
 
-.page.theme_light .decorative-rec-icon {
+.page.theme_light .header-rec {
   display: none;
 }
