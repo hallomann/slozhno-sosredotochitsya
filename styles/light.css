@@ -30,6 +30,10 @@
     --text-color: #353430;
     --subtitle-color: #353430;
   }
+
+  .page.theme_light .header-rec {
+    display: none;
+  }
 }
 
 .page.theme_light .header-rec {
