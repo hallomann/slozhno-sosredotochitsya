@@ -4,39 +4,31 @@
   переключая тему
 */
 
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 .page.theme_light {
   --background-image: url(../images/cover-image-light.png);
-  --main-font: "IBM Plex Mono";
-  --text-color: #353430;
-  --main-color: #ff8dcb;
-  --accent-color: #353430;
-  --title-color: #ffc2e6;
-  --menu-color: #353430;
+  --background-color: #ffeff8;
+  --accent-color: #ff8dcb;
+  --color-hover: #353430;
+  --color-hover-alpha: rgba(50, 49, 45, 0.5);
+  --title-color: #353430;
   --shadow-color: #ff0070;
-  --dec-color: #353430;
-  --h2-color: #353430;
-  --hover-color: rgb(50, 49, 45);
+  --header-color: #ffc2e6;
+  --text-color: #353430;
+  --subtitle-color: #353430;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --background-image: url(../images/cover-image-light.png);
-    --main-font: "IBM Plex Mono";
-    --text-color: #353430;
-    --main-color: #ff8dcb;
-    --accent-color: #353430;
-    --title-color: #ffc2e6;
-    --menu-color: #353430;
+    --background-color: #ffeff8;
+    --accent-color: #ff8dcb;
+    --color-hover: #353430;
+    --color-hover-alpha: rgba(50, 49, 45, 0.5);
+    --title-color: #353430;
     --shadow-color: #ff0070;
-    --dec-color: #353430;
-    --h2-color: #353430;
-    --hover-color: rgba(50, 49, 45, 0.4);
+    --header-color: #ffc2e6;
+    --text-color: #353430;
+    --subtitle-color: #353430;
   }
 }
 

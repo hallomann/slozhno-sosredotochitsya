@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="color-scheme" content="dark light"> <!-- начинаем верстать с темной темы -->
+    <meta name="color-scheme" content="dark light">
+    <!-- начинаем верстать с темной темы -->
     <title>Сложно сосредоточиться</title>
     <link rel="icon" sizes="any" href="./images/favicon.ico">
     <link rel="icon" type="image/svg+xml" href="./images/favicon.svg">
@@ -18,7 +19,7 @@
   </head>
   <body class="page">
     <header class="header decorated-zone">
-      <span class="header-rec" aria-hidden="true">REC</span>
+      <div class="header-rec" aria-hidden="true">rec</div>
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
@@ -45,40 +46,33 @@
           </li>
         </ul>
       </nav>
-      <h1 class="header__title">no focus</h1>
-      <p class="header__text accented-background accented-text accented-text_bold">
+      <h1 class="header__title main__title">no focus</h1>
+      <p class="header__text accent__text">
         Что делать, когда не можешь делать ничего<br>
         Или почему нам так сложно сконцентрироваться, особенно когда очень надо
       </p>
     </header>
     <main>
-      <section class="section__why">
-        <h2 class="section__why__title h2__title">
-          Почему сосредоточиться так сложно
-        </h2>
-        <ul class="section__why__list">
-          <li class="section__why__list-item">
-            <h3 class="section__why__list-title h3__title">Многозадачность</h3>
-            <p class="section__why__list-text text">
+      <section class="why section">
+        <h2 class="h__title">Почему сосредоточиться так сложно</h2>
+        <ul class="why__description">
+          <li class="card">
+            <h3 class="card__title accent__text">Многозадачность</h3>
+            <p class="card__text">
               Особенно сложно сосредоточиться, когда задач много и все они —
               важные. Где же легендарная многозадачность, когда она так нужна
               вам (и всем нанимающим менеджерам этого мира)? А дело в том, что
               её просто не существует. Исследователи
-              <a
-                class="accented-link"
-                href="https://www.dana.org/article/multicosts-of-multitasking/"
-                target="_blank"
-                >выяснили</a
-              >, что мозгу тяжело концентрироваться даже на двух делах
-              одновременно. А когда в поле внимания попадает несколько важных
-              задач, организм паникует и выделяет кортизол и адреналин —
-              «гормоны стресса». Из-за этого мы работаем невнимательно:
-              ошибаемся и быстро устаём.
+              <a href="" class="shadow">выяснили</a>, что мозгу тяжело
+              концентрироваться даже на двух делах одновременно. А когда в поле
+              внимания попадает несколько важных задач, организм паникует и
+              выделяет кортизол и адреналин — «гормоны стресса». Из-за этого мы
+              работаем невнимательно: ошибаемся и быстро устаём.
             </p>
           </li>
-          <li class="section__why__list-item">
-            <h3 class="section__why__list-title h3__title">Дофамин</h3>
-            <p class="section__why__list-text text">
+          <li class="card">
+            <h3 class="card__title accent__text">Дофамин</h3>
+            <p class="card__text">
               С гормонами стресса всё понятно, но дальше — ещё интереснее. В
               нашей невозможности сосредоточиться замешана и полная
               противоположность стрессу — дофамин. Это вещество участвует в
@@ -91,14 +85,12 @@
           </li>
         </ul>
       </section>
-      <section class="section__what">
-        <h2 class="section__what__title h2__title">
-          Что снижает концентрацию внимания?
-        </h2>
-        <ul class="section__what_list">
-          <li class="section__what__list-item">
-            <h3 class="section__what__list-title h3__title">Многозадачность</h3>
-            <p class="section__what__list-text text">
+      <section class="what section">
+        <h2 class="h__title what__title">Что снижает концентрацию внимания?</h2>
+        <ul class="what__text">
+          <li class="card what__card">
+            <h3 class="card__title accent__text">Многозадачность</h3>
+            <p class="card__text">
               Как концентрация может снижаться из-за… концентрации? Любая
               стрессовая ситуация (и резко меняющийся мир в целом) заставляет
               наш мозг постоянно «сканировать» окружающую среду на предмет
@@ -107,9 +99,9 @@
               может не выдержать, если не давать ей отдохнуть.
             </p>
           </li>
-          <li class="section__what__list-item">
-            <h3 class="section__what__list-title h3__title">Еда</h3>
-            <p class="section__what__list-text text">
+          <li class="card what__card">
+            <h3 class="card__title accent__text">Еда</h3>
+            <p class="card__text">
               «Быстрые углеводы» — сахар, белый хлеб, сладости — молниеносно
               доставляют в мозг энергию и помогают ему лучше работать. Но уходит
               эта энергия также быстро, как и приходит. А мы в результате
@@ -118,9 +110,9 @@
               хотим ещё больше быстрых углеводов.
             </p>
           </li>
-          <li class="section__what__list-item">
-            <h3 class="section__what__list-title h3__title">Гаджеты</h3>
-            <p class="section__what__list-text text">
+          <li class="card what__card">
+            <h3 class="card__title accent__text">Гаджеты</h3>
+            <p class="card__text">
               Да-да, это та самая ситуация, когда на экране ноутбука — код, в
               наушниках — подкаст, а на компьютере фоном — ещё и видео с
               забавными утятами. В результате мозг пытается переключиться с
@@ -132,21 +124,21 @@
           </li>
         </ul>
       </section>
-      <section class="section__how">
-        <h2 class="section__how_title h2__title">
+      <section class="why section">
+        <h2 class="h__title">
           Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх
           секунд)
         </h2>
-        <div class="section__how__list">
-          <h3 class="section__how__list-title title">
+        <div>
+          <h3 class="subtitle h__title accent__text">
             5 простых (на самом деле не очень) советов
           </h3>
-          <ul class="section__how__list">
-            <li class="section__how__list-item">
-              <h4 class="section__how__list-title h3__title">
+          <ul>
+            <li class="card">
+              <h3 class="card__title accent__text thin">
                 Представьте небо и облака
-              </h4>
-              <p class="section__how__list-text text">
+              </h3>
+              <p class="card__text">
                 Или листья в ручье. Тут дело в лёгкой медитации, которая
                 помогает успокоиться. Ведь часто именно тревожные мысли о
                 сложных задачах как раз и мешают эти сложные задачи делать. В
@@ -157,35 +149,30 @@
                 не волноваться о потенциальных проблемах из будущего.
               </p>
             </li>
-            <li class="section__how__list-item">
-              <h4 class="section__how_list-title h3__title">Включите музыку</h4>
-              <p class="section__how_list-text text">
+            <li class="card">
+              <h3 class="card__title accent__text thin">Включите музыку</h3>
+              <p class="card__text">
                 Но не любую, и не любимую. Любимая может быть связана с сильными
                 положительными эмоциями, которые тоже очень сильно отвлекают.
                 Подойдёт тихая, спокойная, умеренно-ритмичная. Можно вообще
                 попробовать включить плейлист в «белым шумом» или нейромузыкой.
               </p>
             </li>
-            <li class="section__how__list-item">
-              <h4 class="section__how__list-title h3__title">Прогуляйтесь</h4>
-              <p class="section__how__list-text text">
+            <li class="card">
+              <h3 class="card__title accent__text thin">Прогуляйтесь</h3>
+              <p class="card__text">
                 Или даже пробегитесь. Лучше найти парк или лес: один эксперимент
-                <a
-                  class="accented-link"
-                  href="https://www.sciencedirect.com/science/article/abs/pii/S0272494415000328"
-                  target="_blank"
-                  >показал</a
-                >, что созерцание природы повышает концентрацию, в то время как
-                после просмотра городских пейзажей она наоборот понижается.
-                Можно совместить прогулку с физическими упражнениями или бегом —
-                так в мозг поступит ещё больше кислорода и он будет лучше
-                работать. Но и простая двадцатиминутная прогулка — тоже отличный
-                вариант.
+                <a href="" class="shadow">показал</a> , что созерцание природы
+                повышает концентрацию, в то время как после просмотра городских
+                пейзажей она наоборот понижается. Можно совместить прогулку с
+                физическими упражнениями или бегом — так в мозг поступит ещё
+                больше кислорода и он будет лучше работать. Но и простая
+                двадцатиминутная прогулка — тоже отличный вариант.
               </p>
             </li>
-            <li class="section__how__list-item">
-              <h4 class="section__how__list-title h3__title">Хорошо ешьте</h4>
-              <p class="section__how__list-text text">
+            <li class="card">
+              <h3 class="card__title accent__text thin">Хорошо ешьте</h3>
+              <p class="card__text">
                 Мы — не ваша бабушка, но это правда важно. Выбирайте продукты,
                 которые препятствуют резким скачкам сахара в крови. Например, с
                 высоким содержанием клетчатки: овощи, ягоды, бобовые (нут,
@@ -193,9 +180,9 @@
                 пшеницы.
               </p>
             </li>
-            <li class="section__how__list-item">
-              <h4 class="section__how__list-title h3__title">Читайте</h4>
-              <p class="section__how__list-text text">
+            <li class="card">
+              <h3 class="card__title accent__text thin">Читайте</h3>
+              <p class="card__text">
                 Настоящие бумажные книги. Это правда помогает с концентрацией:
                 чтобы прочитать пост в соцсети, достаточно нескольких минут или
                 даже секунд. А вот интересная книга способна затянуть и на
@@ -205,68 +192,58 @@
           </ul>
         </div>
       </section>
-      <section class="section__gallery">
-        <h2 class="section__gallery_title h3__title">А можно в картинках?</h2>
-        <ul class="section__gallery__list">
-          <li class="section__gallery__list-item">
-            <img
-              src="images/sunset.png"
-              alt="На картинке изображен вид на мирное озеро и горы на закате, 
+      <section class="images">
+        <h2 class="images__title accent__text">А можно в картинках?</h2>
+        <div class="gallery">
+          <img
+            src="./images/sunset.png"
+            alt="На картинке изображен вид на мирное озеро и горы на закате, 
               с ярко выраженной палитрой в оттенках фиолетового, розового, оранжевого и голубого. 
               Солнце низко над горизонтом, создавая яркое отражение на воде. На заднем плане видны низкие холмы и плавные контуры гор. 
               В небе летают птицы, добавляя динамичности сцене. 
               Различные оттенки и насыщенность цветов придают картине мечтательный и томный вид"
-              class="section__gallery__img"
-              loading="lazy"
-            >
-          </li>
-          <li class="section__gallery__list-item">
-            <img
-              src="images/ice-cream.png"
-              alt="Мультяшное изображение сладкой пищи с антропоморфными элементами. 
+            class="gallery__image inline"
+            loading="lazy"
+          >
+          <img
+            src="./images/ice-cream.png"
+            alt="Мультяшное изображение сладкой пищи с антропоморфными элементами. 
               Розовый милый котенок сидит на вершине блюда в форме банана с мороженым с нарисованными на нем лицами. 
               Мороженое украшено клубникой, печеньем, сливками и вишней на вершине. 
               Все это находится в милой улыбающейся золотистой миске с звездами"
-              class="section__gallery__img"
-              loading="lazy"
-            >
-          </li>
-          <li class="section__gallery__list-item">
-            <img
-              src="images/tape.png"
-              alt="Изображение в стиле пиксель-арта с ностальгической тематикой, 
+            class="gallery__image block"
+            loading="lazy"
+          >
+          <img
+            src="./images/tape.png"
+            alt="Изображение в стиле пиксель-арта с ностальгической тематикой, 
               изображающее фиолетовую аудиокассету на фоне с градиентом от светло-фиолетового к темно-синему. 
               Вокруг кассеты нарисованы стилизованные элементы: маленькие облачка, звезды, части кассеты, цветы и музыкальные ноты. 
               Также на картинке есть изображения интерфейсных окон, таких как плеер с кнопкой воспроизведения и сообщение с текстом 'OK'. 
               В верхнем левом углу изображен трофей. Основные цвета изображения — различные оттенки фиолетового и синего"
-              class="section__gallery__img"
-              loading="lazy"
-            >
-          </li>
-          <li class="section__gallery__list-item">
-            <img
-              src="images/books.png"
-              alt="Изображение стопки книг на фоне сиреневого цвета. Верхняя книга – чашка розового цвета с надписью рид мор. 
+            class="gallery__image block"
+            loading="lazy"
+          >
+          <img
+            src="./images/books.png"
+            alt="Изображение стопки книг на фоне сиреневого цвета. Верхняя книга – чашка розового цвета с надписью рид мор. 
               Под чашкой находится одиннадцать книг. Сверху вниз: две неподписанные книги, сиреневая книга с надписью энциклопедия, 
-              пять неподписанных книг, бургундская с голубыми вставками и надписью Лолита, розовая с надписью дикшионари, 
+              пять неподписанных книг, бургундская с голубыми вставками и надписью Лолита, розовая с надписью дикшионари,
               оранжевая с надписью Success People. Фон украшен мелкими белыми звездами"
-              class="section__gallery__img"
-              loading="lazy"
-            >
-          </li>
-          <li class="section__gallery__list-item">
-            <img
-              src="images/street.png"
-              alt="Иллюстрация улицы в японском стиле с розово-фиолетовыми оттенками, показывающая здания, дорогу и облака на фоне заката."
-              class="section__gallery__img"
-              loading="lazy"
-            >
-          </li>
-        </ul>
+            class="gallery__image"
+            loading="lazy"
+          >
+          <img
+            src="./images/street.png"
+            alt="Иллюстрация улицы в японском стиле с розово-фиолетовыми оттенками, показывающая здания, дорогу и облака на фоне заката."
+            class="gallery__image inline"
+            loading="lazy"
+          >
+        </div>
       </section>
     </main>
-    <footer class="footer decorated-zone">
-      <h2 class="footer__title">focus</h2>
+    <footer class="footer">
+      <h2 class="main__title decorated-zone footer__title">focus</h2>
     </footer>
     <script src="./scripts/script.js"></script>
   </body>
